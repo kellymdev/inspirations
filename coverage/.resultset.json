@@ -5,12 +5,21 @@
         1,
         null
       ],
+      "/Users/Kel/Documents/dev/git/inspirations/app/models/author.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
       "/Users/Kel/Documents/dev/git/inspirations/app/models/quote.rb": [
         1,
+        1,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1439852404
+    "timestamp": 1439853466
   }
 }

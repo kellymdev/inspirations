@@ -9,7 +9,14 @@ RSpec.describe Quote, type: :model do
     end
   end
 
+  context "relationships" do
+    it "belongs to an author" do
+      expect(quote).to belong_to(:author)
+    end
+  end
+
   after do
     Quote.destroy_all
+    Author.destroy_all
   end
 end
