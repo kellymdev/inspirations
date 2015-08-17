@@ -13,10 +13,15 @@ RSpec.describe Quote, type: :model do
     it "belongs to an author" do
       expect(quote).to belong_to(:author)
     end
+
+    it "belongs to a category" do
+      expect(quote).to belong_to(:category)
+    end
   end
 
   after do
     Quote.destroy_all
     Author.destroy_all
+    Category.destroy_all
   end
 end
