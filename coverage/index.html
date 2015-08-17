@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-08-18T11:17:46+12:00">2015-08-18T11:17:46+12:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-08-18T11:28:54+12:00">2015-08-18T11:28:54+12:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>3</b> files in total.
-    <b>7</b> relevant lines. 
-    <span class="green"><b>7</b> lines covered</span> and
+    <b>4</b> files in total.
+    <b>11</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -71,11 +71,21 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#94bd3f6c65b45cfa80831f35c31e5e06f7ed3dc1" class="src_link" title="app/models/quote.rb">app/models/quote.rb</a></td>
+        <td class="strong"><a href="#7b905ff0f4425c238c6747ead12756e7af62ac9d" class="src_link" title="app/models/category.rb">app/models/category.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>3</td>
         <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#94bd3f6c65b45cfa80831f35c31e5e06f7ed3dc1" class="src_link" title="app/models/quote.rb">app/models/quote.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -136,9 +146,9 @@
   </h2>
   <a name="Models"></a>
   <div>
-    <b>2</b> files in total.
-    <b>6</b> relevant lines. 
-    <span class="green"><b>6</b> lines covered</span> and
+    <b>3</b> files in total.
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -166,11 +176,21 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#94bd3f6c65b45cfa80831f35c31e5e06f7ed3dc1" class="src_link" title="app/models/quote.rb">app/models/quote.rb</a></td>
+        <td class="strong"><a href="#7b905ff0f4425c238c6747ead12756e7af62ac9d" class="src_link" title="app/models/category.rb">app/models/category.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>3</td>
         <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#94bd3f6c65b45cfa80831f35c31e5e06f7ed3dc1" class="src_link" title="app/models/quote.rb">app/models/quote.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -389,13 +409,61 @@
   </pre>
 </div>
       
+        <div class="source_table" id="7b905ff0f4425c238c6747ead12756e7af62ac9d">
+  <div class="header">
+    <h3>app/models/category.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Category &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :title, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :quotes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="94bd3f6c65b45cfa80831f35c31e5e06f7ed3dc1">
   <div class="header">
     <h3>app/models/quote.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -427,7 +495,13 @@
           <code class="ruby">  belongs_to :author</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :category</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
