@@ -19,4 +19,8 @@ RSpec.describe CategoriesController, type: :controller do
       expect(response).to render_template(:index)
     end
   end
+
+  after do
+    Category.destroy_all
+  end
 end
