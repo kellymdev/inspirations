@@ -1,0 +1,7 @@
+<ul class="category-list">
+  <% @categories.each do |category| %>
+    <li id="<%= category.title.downcase %>">
+      <p><%= category.title %></p>
+    </li>
+  <% end %>
+</ul>
