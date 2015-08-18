@@ -1,7 +1,9 @@
 <ul class="category-list">
   <% @categories.each do |category| %>
-    <li id="<%= category.title.downcase %>">
-      <p><%= category.title %></p>
-    </li>
+    <%= link_to "/quotes/#{category.title.downcase}" do %>
+      <li id="<%= category.title.downcase %>">
+        <p><%= category.title %></p>
+      </li>
+    <% end %>
   <% end %>
 </ul>
