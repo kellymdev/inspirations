@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-08-18T16:19:50+12:00">2015-08-18T16:19:50+12:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-08-18T16:58:41+12:00">2015-08-18T16:58:41+12:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>10</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
@@ -181,7 +181,7 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>10</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
@@ -528,52 +528,46 @@
         <li class="never" data-hits="" data-linenumber="3">
           
           
-          <code class="ruby">  #get &#39;/quotes/dreams&#39;</code>
+          <code class="ruby">  #get &#39;/quotes/random/:category&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  def dreams_random</code>
+          <code class="ruby">  def random</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="5">
           <span class="hits">3</span>
           
-          <code class="ruby">    dreams = Category.find_by_title(&quot;Dreams&quot;)</code>
+          <code class="ruby">    puts params[:category]</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="6">
           <span class="hits">3</span>
           
-          <code class="ruby">    @quote = dreams.quotes.sample</code>
+          <code class="ruby">    category = Category.find_by_title(params[&quot;category&quot;])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="8">
+        <li class="covered" data-hits="3" data-linenumber="7">
           <span class="hits">3</span>
           
-          <code class="ruby">    render :dreams</code>
+          <code class="ruby">    @quote = category.quotes.sample</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
