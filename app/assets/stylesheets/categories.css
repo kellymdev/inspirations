@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.category-list a {
+  text-decoration: none;
+}
+
 .category-list li {
   width: 150px;
   height: 150px;
