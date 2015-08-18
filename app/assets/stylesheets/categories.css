@@ -1,0 +1,29 @@
+.category-list {
+  list-style: none;
+  text-align: center;
+}
+
+.category-list li {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 3px 3px 5px #908785;
+}
+
+.category-list p {
+  padding-top: 20px;
+}
+
+#dreams {
+  background-color: #3B4F6E;
+}
+
+#challenges {
+  background-color: #BD3C51;
+}
+
+#success {
+  background-color: #45A697;
+}
