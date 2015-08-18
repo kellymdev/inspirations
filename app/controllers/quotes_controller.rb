@@ -5,6 +5,7 @@ class QuotesController < ApplicationController
     puts params[:category]
     category = Category.find_by_title(params["category"])
     @quote = category.quotes.sample
+    @categories = Category.all
   end
 
 end
