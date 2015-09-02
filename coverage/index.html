@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-08-18T18:27:28+12:00">2015-08-18T18:27:28+12:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-09-03T10:30:12+12:00">2015-09-03T10:30:12+12:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.45
+         1.39
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>22</b> relevant lines. 
-    <span class="green"><b>22</b> lines covered</span> and
+    <b>21</b> relevant lines. 
+    <span class="green"><b>21</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>6</td>
-        <td>6</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>2.2</td>
       </tr>
       
       <tr>
@@ -133,15 +133,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.9
+         1.81
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>3</b> files in total.
-    <b>11</b> relevant lines. 
-    <span class="green"><b>11</b> lines covered</span> and
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -181,11 +181,11 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>6</td>
-        <td>6</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>2.2</td>
       </tr>
       
     </tbody>
@@ -504,8 +504,8 @@
     <h3>app/controllers/quotes_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -540,40 +540,34 @@
         <li class="covered" data-hits="3" data-linenumber="5">
           <span class="hits">3</span>
           
-          <code class="ruby">    puts params[:category]</code>
+          <code class="ruby">    category = Category.find_by(&quot;title = ?&quot;, params[&quot;category&quot;])</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="6">
           <span class="hits">3</span>
           
-          <code class="ruby">    category = Category.find_by_title(params[&quot;category&quot;])</code>
+          <code class="ruby">    @quote = category.quotes.sample</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="7">
           <span class="hits">3</span>
           
-          <code class="ruby">    @quote = category.quotes.sample</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
-          
           <code class="ruby">    @categories = Category.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
