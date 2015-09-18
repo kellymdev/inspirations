@@ -14,9 +14,4 @@ RSpec.describe Author, type: :model do
       expect(author).to have_many(:quotes)
     end
   end
-
-  after do
-    Author.destroy_all
-    Quote.destroy_all
-  end
 end

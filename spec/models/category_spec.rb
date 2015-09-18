@@ -14,8 +14,4 @@ RSpec.describe Category, type: :model do
       expect(category).to have_many(:quotes)
     end
   end
-
-  after do
-    Category.destroy_all
-  end
 end
