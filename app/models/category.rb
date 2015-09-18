@@ -1,5 +1,5 @@
 class Category < ActiveRecord::Base
-  validates :title, presence: true
-
   has_many :quotes
+
+  validates :title, presence: true
 end

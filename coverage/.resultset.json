@@ -7,10 +7,8 @@
       ],
       "/Users/Kel/Documents/dev/git/inspirations/app/controllers/categories_controller.rb": [
         1,
-        null,
         1,
         3,
-        null,
         null,
         null
       ],
@@ -24,12 +22,10 @@
       "/Users/Kel/Documents/dev/git/inspirations/app/controllers/quotes_controller.rb": [
         1,
         null,
-        null,
         1,
         3,
         3,
         3,
-        null,
         null,
         null
       ],
@@ -50,12 +46,12 @@
       "/Users/Kel/Documents/dev/git/inspirations/app/models/quote.rb": [
         1,
         1,
-        null,
         1,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1441233012
+    "timestamp": 1442615401
   }
 }

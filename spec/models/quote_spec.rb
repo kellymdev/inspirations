@@ -18,10 +18,4 @@ RSpec.describe Quote, type: :model do
       expect(quote).to belong_to(:category)
     end
   end
-
-  after do
-    Quote.destroy_all
-    Author.destroy_all
-    Category.destroy_all
-  end
 end

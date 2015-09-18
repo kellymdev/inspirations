@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-09-03T10:30:12+12:00">2015-09-03T10:30:12+12:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-09-19T10:30:01+12:00">2015-09-19T10:30:01+12:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -63,7 +63,7 @@
       <tr>
         <td class="strong"><a href="#ce89f0b04201cd79b4693623e32c333a26d3cdcf" class="src_link" title="app/controllers/categories_controller.rb">app/controllers/categories_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
+        <td>5</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -73,7 +73,7 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>8</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
@@ -171,7 +171,7 @@
       <tr>
         <td class="strong"><a href="#ce89f0b04201cd79b4693623e32c333a26d3cdcf" class="src_link" title="app/controllers/categories_controller.rb">app/controllers/categories_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
+        <td>5</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -181,7 +181,7 @@
       <tr>
         <td class="strong"><a href="#44c401e78350f03b993ff41a750073d1cb9d7813" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>8</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
@@ -459,37 +459,25 @@
           <code class="ruby">class CategoriesController &lt; ApplicationController</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="4">
+        <li class="covered" data-hits="3" data-linenumber="3">
           <span class="hits">3</span>
           
           <code class="ruby">    @categories = Category.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -522,52 +510,40 @@
         <li class="never" data-hits="" data-linenumber="2">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
           <code class="ruby">  #get &#39;/quotes/random/:category&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  def random</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
+        <li class="covered" data-hits="3" data-linenumber="4">
           <span class="hits">3</span>
           
           <code class="ruby">    category = Category.find_by(&quot;title = ?&quot;, params[&quot;category&quot;])</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="6">
+        <li class="covered" data-hits="3" data-linenumber="5">
           <span class="hits">3</span>
           
           <code class="ruby">    @quote = category.quotes.sample</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
+        <li class="covered" data-hits="3" data-linenumber="6">
           <span class="hits">3</span>
           
           <code class="ruby">    @categories = Category.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -630,7 +606,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :name, presence: true</code>
+          <code class="ruby">  has_many :quotes</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -642,7 +618,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :quotes</code>
+          <code class="ruby">  validates :name, presence: true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -678,7 +654,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :title, presence: true</code>
+          <code class="ruby">  has_many :quotes</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -690,7 +666,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :quotes</code>
+          <code class="ruby">  validates :title, presence: true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -726,25 +702,25 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :quote_text, presence: true</code>
+          <code class="ruby">  belongs_to :author</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :category</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  belongs_to :author</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :category</code>
+          <code class="ruby">  validates :quote_text, presence: true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
