@@ -4,4 +4,7 @@ A random quote generator created in Ruby on Rails, tested with RSpec.
 
 == Key features:
 
-* View a random quote from one of three categories: Dreams, Challenges or Success.
+View a random quote from one of three categories:
+* Dreams
+* Challenges
+* Success
