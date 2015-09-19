@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe CategoriesController, type: :controller do
+  render_views
+
   let(:category) { create(:category) }
+
   describe "get #index" do
     before { get :index }
 

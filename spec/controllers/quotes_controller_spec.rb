@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe QuotesController, type: :controller do
+  render_views
+
   let!(:dreams) { create(:category, title: "Dreams") }
   let!(:quote) { create(:quote, category: dreams) }
 
