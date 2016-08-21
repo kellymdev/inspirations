@@ -7,7 +7,7 @@ RSpec.describe QuotesController, type: :controller do
   let!(:quote) { create(:quote, category: dreams) }
 
   describe "get #random" do
-    before { get :random, category: "Dreams" }
+    before { get :random, params: { category: "Dreams" } }
 
     it "returns http status 200" do
       expect(response.status).to eq(200)
