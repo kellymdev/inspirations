@@ -1,4 +1,4 @@
-<%= link_to "/quotes/random/#{category.title}" do %>
+<%= link_to random_quote_path(category.title) do %>
   <li id="<%= category.title.downcase %>">
     <p><%= category.title %></p>
   </li>
