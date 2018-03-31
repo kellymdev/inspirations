@@ -1,9 +1,3 @@
 <ul class="category-list">
-  <% @categories.each do |category| %>
-    <%= link_to "/quotes/random/#{category.title}" do %>
-      <li id="<%= category.title.downcase %>">
-        <p><%= category.title %></p>
-      </li>
-    <% end %>
-  <% end %>
+  <%= render partial: 'category', collection: @categories %>
 </ul>
