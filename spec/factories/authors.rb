@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :author do
-    name "Helen Keller"
+    name { "Helen Keller" }
   end
 end
